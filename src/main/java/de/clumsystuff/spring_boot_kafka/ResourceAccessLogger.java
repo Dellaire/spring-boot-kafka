@@ -11,9 +11,15 @@ public class ResourceAccessLogger {
 
 	private final static Logger logger = LoggerFactory.getLogger(ResourceAccessLogger.class);
 	
-	@KafkaListener(topics = "resourceAccess")
-	public void logResourceAccess(ConsumerRecord<?, String> consumerRecord) {
+	@KafkaListener(topics = "resourceAccess", groupId = "resourceAccess1")
+	public void logResourceAccess1(ConsumerRecord<?, String> consumerRecord) {
 		
-		logger.info(consumerRecord.value());
+		logger.info("1: " + consumerRecord.value());
+	}
+	
+	@KafkaListener(topics = "resourceAccess", groupId = "resourceAccess2")
+	public void logResourceAccess2(ConsumerRecord<?, String> consumerRecord) {
+		
+		logger.info("2: " + consumerRecord.value());
 	}
 }

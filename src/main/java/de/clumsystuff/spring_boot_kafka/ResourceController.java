@@ -17,6 +17,6 @@ public class ResourceController {
 	@GetMapping("/{resourceId}")
 	public void triggerEvent(@PathVariable String resourceId) {
 
-		this.template.send("resourceAccess", "Resource with ID " + resourceId + " was requested");
+		this.template.send("resourceAccess", resourceId, "Resource with ID " + resourceId + " was requested");
 	}
 }
