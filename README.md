@@ -4,11 +4,11 @@ This is just a sandbox for playing around with Apache Kafka via Spring Boot.
 
 ## Setting up the required Infrastructure
 
-The infrastructure needed to run this application can be set up by calling `docker-compose up` from root directory of this repository.
+The infrastructure needed to run this application can be set up by calling `docker-compose up` from the root directory of this repository.
 
 ## Kafka Configuration
 
-Configurations can be done via the Confluent Control Center. It is accessible under http://localhost:9021.
+Configurations can be done via the Confluent Control Center, which is accessible under http://localhost:9021.
 
 ### Reading Data from RabbitMQ
 
