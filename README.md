@@ -12,3 +12,4 @@ This is just a sandbox for playing around with Apache Kafka via Spring Boot.
 * https://docs.confluent.io/current/quickstart/ce-docker-quickstart.html
 * https://rmoff.net/2018/08/02/kafka-listeners-explained/
 * https://medium.com/trendyol-tech/how-to-implement-retry-logic-with-spring-kafka-710b51501ce2
+* https://github.com/confluentinc/demo-scene/tree/master/rabbitmq-into-kafka
